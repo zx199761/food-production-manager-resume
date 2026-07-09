@@ -710,8 +710,10 @@ a:hover { color: var(--clay-mid); }
 
 /* Mewoofun gallery */
 .mwwy-gallery {
-  padding: 24px 36px;
+  padding: 32px 36px 24px;
   background: var(--cream);
+  overflow: visible;
+  position: relative;
 }
 .mwwy-gallery img {
   width: 100%;
@@ -721,6 +723,7 @@ a:hover { color: var(--clay-mid); }
   border: 1px solid var(--border);
   object-fit: contain;
   max-height: none;
+  margin-top: 0;
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .mwwy-gallery img:hover { transform: scale(1.01); }
@@ -1000,7 +1003,7 @@ footer::before {
   .exp-achievements { grid-template-columns: 1fr 1fr; }
   .portfolio-card-header { padding: 28px 24px 22px; }
   .portfolio-gallery { padding: 24px; }
-  .mwwy-gallery { padding: 24px; }
+  .mwwy-gallery { padding: 28px 24px 24px; }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 52px; }
@@ -1409,12 +1412,12 @@ src="images/photo_new2.jpg"
     <div class="portfolio-cta reveal" style="text-align:center; margin-top:48px; padding:40px 32px; background:linear-gradient(135deg, var(--clay-pale) 0%, var(--amber-pale) 100%); border-radius:var(--radius-lg); border:1px solid var(--clay-pale2);">
       <div style="font-family:var(--font-serif);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:8px;">完整产品开发作品集</div>
       <p style="font-size:14px;color:var(--muted);margin-bottom:24px;max-width:520px;margin-left:auto;margin-right:auto;">包含产品规划、供应链管理、市场分析等完整 PPT 内容，深度展示产品开发全流程能力。</p>
-      <a href="https://zx199761.github.io/%E6%9C%B1%E5%93%8D%EF%BC%88%E5%BA%94%E8%81%98%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%EF%BC%89%E2%80%94%E4%BA%94%E5%B9%B4%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C.pdf" target="_blank" rel="noopener"
+      <a href="portfolio.pdf" target="_blank" rel="noopener"
         style="display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--clay);color:#fff;text-decoration:none;border-radius:30px;font-weight:600;font-size:16px;transition:all 0.3s;box-shadow:0 4px 16px rgba(27,122,86,0.25);"
         onmouseover="this.style.background='var(--clay-mid)';this.style.transform='translateY(-2px)';this.style.boxShadow='0 6px 24px rgba(27,122,86,0.35)'"
         onmouseout="this.style.background='var(--clay)';this.style.transform='translateY(0)';this.style.boxShadow='0 4px 16px rgba(27,122,86,0.25)'">
-        <span style="font-size:20px;">📄</span> 查看完整产品开发 PPT
-        <span style="font-size:14px;opacity:0.8;font-weight:400;">（5-24页产品作品内容）</span>
+        <span style="font-size:20px;">📄</span> 查看完整产品开发 PDF
+        <span style="font-size:14px;opacity:0.8;font-weight:400;">（文件待上传）</span>
       </a>
     </div>
 
