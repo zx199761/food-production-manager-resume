@@ -710,10 +710,31 @@ a:hover { color: var(--clay-mid); }
 
 /* Mewoofun gallery */
 .mwwy-gallery {
-  padding: 32px 36px 24px;
+  padding: 24px 36px 24px;
   background: var(--cream);
   overflow: visible;
   position: relative;
+}
+.mwwy-gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 8px 0 18px;
+  margin-bottom: 2px;
+}
+.mwwy-gallery-header h4 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+.mwwy-gallery-header span {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 .mwwy-gallery img {
   width: 100%;
@@ -1003,7 +1024,9 @@ footer::before {
   .exp-achievements { grid-template-columns: 1fr 1fr; }
   .portfolio-card-header { padding: 28px 24px 22px; }
   .portfolio-gallery { padding: 24px; }
-  .mwwy-gallery { padding: 28px 24px 24px; }
+  .mwwy-gallery { padding: 24px; }
+  .mwwy-gallery-header h4 { font-size: 18px; }
+  .mwwy-gallery-header span { font-size: 11px; }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 52px; }
@@ -1384,6 +1407,10 @@ src="images/photo_new2.jpg"
       </div>
 
       <div class="mwwy-gallery">
+        <div class="mwwy-gallery-header">
+          <h4>喵乎汪也 品牌落地</h4>
+          <span>Product portfolio</span>
+        </div>
         <img src="images/yWYdaNFseezuHYuE.png"
           alt="喵乎汪也 · 全品类产品矩阵" loading="lazy">
       </div>
